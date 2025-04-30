@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0" expressionLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" namespace="https://kie.org/dmn/_75F1FA8B-D2EF-4595-AA25-99430387B16E" id="_7879E2A8-06A8-40D3-866B-2F46F9B8BE0E" name="DMN_421F2E93-CBA7-47E7-B542-85A264ACD3D6">
+  <itemDefinition id="_0E76D18D-DE4A-4BA4-9418-8BD2CD017749" name="merchantCategory" isCollection="true" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+    <description>MCC</description>
+    <typeRef>string</typeRef>
+    <allowedValues id="_7E3E4EBD-6834-45BA-829A-2F8DE3ABBCAA" kie:constraintType="enumeration">
+      <text>&quot;Accommodation&quot;, &quot;Advertising Services&quot;</text>
+    </allowedValues>
+  </itemDefinition>
+  <itemDefinition id="_88218073-5763-4567-83CD-B8B7619FE1CC" name="Merchant Profile Listing" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+    <description></description>
+    <itemComponent id="_BA558A5F-4289-4C05-B9C2-8BDD5AD0F47C" name="merchantID" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>string</typeRef>
+    </itemComponent>
+    <itemComponent id="_D1280A32-FDC0-4D3F-895E-6AC41FA5460F" name="status" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>boolean</typeRef>
+    </itemComponent>
+    <itemComponent id="_45F6BDCA-80B7-4D4B-87A4-8333D374734A" name="h-risk" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>boolean</typeRef>
+    </itemComponent>
+    <itemComponent id="_32ACE20B-1F98-478B-A03D-B325D9B17B96" name="expiry" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>date</typeRef>
+    </itemComponent>
+    <itemComponent id="_E0EDBDB0-5B98-4009-BE6A-73088FA5D6BE" name="modified 1" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>date</typeRef>
+    </itemComponent>
+    <itemComponent id="_75B31765-D851-4FDE-A083-9D81866DE8F4" name="created" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>date</typeRef>
+    </itemComponent>
+    <itemComponent id="_17DF97DB-8336-4D96-AA60-DBB6D05720CC" name="maxTranAmt I" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>number</typeRef>
+    </itemComponent>
+    <itemComponent id="_440FC5FC-DA0C-478A-A28F-7094A29AB7D9" name="accBalance" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>number</typeRef>
+    </itemComponent>
+    <itemComponent id="_C755D4E6-CF9C-4034-A497-7A68E540FC10" name="companyName" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>string</typeRef>
+    </itemComponent>
+    <itemComponent id="_00BCE95E-3D2B-4989-BB58-BE1A55739C6A" name="tranRate" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>number</typeRef>
+    </itemComponent>
+  </itemDefinition>
+  <decision name="New Decision" id="_57C3333A-263E-42B4-9AC1-96A195BA7149">
+    <variable name="New Decision" id="_CE2D0975-1995-41EC-A267-886252E5F9D5" />
+    <decisionTable id="_365C10E6-B2F0-4D07-A450-8E6E1DA0723A" hitPolicy="UNIQUE" label="New Decision">
+      <input id="_E326095B-D085-4B5E-A967-90D0E575C7C9">
+        <inputExpression id="_74523DE8-D395-46D5-9E4F-7BFA4A2358CC">
+          <text>Input-1</text>
+        </inputExpression>
+      </input>
+      <output id="_C766DD3A-BC48-4511-BE24-96C8FEED2063" name="Output-1" />
+      <annotation name="Annotations" />
+      <rule id="_83254A92-D189-4992-AE78-B3EE71EA9831">
+        <inputEntry id="_2229BAA9-A086-43D7-B3C7-3148BE0B5686">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="_F8A0D621-1108-446B-BC04-27ABE4D5D204">
+          <text></text>
+        </outputEntry>
+        <annotationEntry>
+          <text>// Your annotations here</text>
+        </annotationEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_D284803D-2AC7-4CEB-BD99-031519356283" name="Default DRD" useAlternativeInputDataShape="false">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_365C10E6-B2F0-4D07-A450-8E6E1DA0723A">
+            <kie:width>60</kie:width>
+            <kie:width>118</kie:width>
+            <kie:width>118</kie:width>
+            <kie:width>240</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="_55E7E8F6-B8D2-4848-9F2F-EED969AA7CDE" dmnElementRef="_57C3333A-263E-42B4-9AC1-96A195BA7149" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="100" y="100" width="160" height="80" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0" expressionLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" namespace="https://kie.org/dmn/_A78559B4-08C7-4988-8C4C-40CE04D8832B" id="_E93392F7-D9EC-44CC-8107-B82A878D65DC" name="DMN_3AC23CC8-92BB-423A-B723-EBE8E71F7FF3">
+  <itemDefinition id="_22751784-424B-4E0C-8F10-9DD8B21DB977" name="MerchantID" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+    <itemComponent id="_B3BC7A26-328F-44AC-8B9D-C688C9B5299D" name="companyName" isCollection="true" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <itemComponent id="_C8B4E63A-E1F6-4FED-8E34-963CB4C5B262" name="TIN" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+        <typeRef>number</typeRef>
+      </itemComponent>
+    </itemComponent>
+    <itemComponent id="_B25D57F7-77A2-4015-9A42-73C69058355F" name="accountBalance" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <itemComponent id="_943C7B28-0A1A-4B69-BA5E-030843FE1DF0" name="New property" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" />
+      <itemComponent id="_E02EEFA8-8088-48AC-9A0D-62887977CA0F" name="New property" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" />
+      <typeRef>number</typeRef>
+    </itemComponent>
+    <itemComponent id="_83AB0EE0-7D0C-45DE-AA63-98EB8189BDC7" name="maxTranAmt" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>number</typeRef>
+    </itemComponent>
+  </itemDefinition>
+</definitions>
