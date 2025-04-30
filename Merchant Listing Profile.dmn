@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <definitions xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0" expressionLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" namespace="https://kie.org/dmn/_75F1FA8B-D2EF-4595-AA25-99430387B16E" id="_7879E2A8-06A8-40D3-866B-2F46F9B8BE0E" name="DMN_421F2E93-CBA7-47E7-B542-85A264ACD3D6">
+  <itemDefinition id="_42CDC1A5-BD0F-4972-83F2-583F20B0C336" name="vt" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+    <description>Virtual Terminal Merchant</description>
+    <typeRef>string</typeRef>
+  </itemDefinition>
   <itemDefinition id="_3C89FF12-37B8-49A6-9F8F-A82CE9D0D352" name="appCodeList" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
     <description>Application Code List</description>
     <itemComponent id="_D2F52738-6CF7-4A95-B3E1-C60B1910C37C" name="onboardStatus" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
@@ -33,10 +37,13 @@
       <text>&quot;Accommodation&quot;, &quot;Advertising Services&quot;</text>
     </allowedValues>
   </itemDefinition>
-  <itemDefinition id="_88218073-5763-4567-83CD-B8B7619FE1CC" name="Merchant Profile Listing" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
-    <description></description>
-    <itemComponent id="_BA558A5F-4289-4C05-B9C2-8BDD5AD0F47C" name="merchantID" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+  <itemDefinition id="_88218073-5763-4567-83CD-B8B7619FE1CC" name="merchantID" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+    <description>Merchant Profile Listing</description>
+    <itemComponent id="_B162C699-89C1-45DF-996E-A3CBE5036E7D" name="vt" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
       <typeRef>string</typeRef>
+    </itemComponent>
+    <itemComponent id="_CE178034-BFA0-46AC-B2B2-A90F5108C12D" name="live" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>boolean</typeRef>
     </itemComponent>
     <itemComponent id="_D1280A32-FDC0-4D3F-895E-6AC41FA5460F" name="status" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
       <typeRef>boolean</typeRef>
