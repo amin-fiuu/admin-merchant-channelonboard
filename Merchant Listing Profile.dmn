@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <definitions xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0" expressionLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" namespace="https://kie.org/dmn/_75F1FA8B-D2EF-4595-AA25-99430387B16E" id="_7879E2A8-06A8-40D3-866B-2F46F9B8BE0E" name="DMN_421F2E93-CBA7-47E7-B542-85A264ACD3D6">
-  <itemDefinition id="_3C89FF12-37B8-49A6-9F8F-A82CE9D0D352" name="appCodeList" isCollection="true" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+  <itemDefinition id="_3C89FF12-37B8-49A6-9F8F-A82CE9D0D352" name="appCodeList" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
     <description>Application Code List</description>
-    <typeRef>string</typeRef>
+    <itemComponent id="_D2F52738-6CF7-4A95-B3E1-C60B1910C37C" name="onboardStatus" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <itemComponent id="_F094A2B6-37E5-469D-A394-7F639B4B6B13" name="GrabPay-Offline" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+        <typeRef>boolean</typeRef>
+      </itemComponent>
+      <itemComponent id="_2A10FF96-C36F-4EC0-85A9-5178864EACD1" name="MB2U-Push" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+        <typeRef>boolean</typeRef>
+      </itemComponent>
+      <itemComponent id="_A1409550-86C1-49BF-84BE-A56AA83F2359" name="MB2U-Pull" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+        <typeRef>boolean</typeRef>
+      </itemComponent>
+    </itemComponent>
+    <itemComponent id="_593D4E33-9986-4F91-A4BB-D0EDB70B4F36" name="secretKey" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>string</typeRef>
+    </itemComponent>
+    <itemComponent id="_D59D61D4-6FB2-41FF-B423-D23558CE2A2D" name="createDate" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>date and time</typeRef>
+    </itemComponent>
+    <itemComponent id="_07A30126-CCAB-41EE-B162-C6A12B739E36" name="storeName" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>string</typeRef>
+    </itemComponent>
+    <itemComponent id="_8EDC29DC-C5B6-448D-A85B-DD84DA784E66" name="storeID" isCollection="false" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
+      <typeRef>string</typeRef>
+    </itemComponent>
   </itemDefinition>
   <itemDefinition id="_0E76D18D-DE4A-4BA4-9418-8BD2CD017749" name="merchantCategory" isCollection="true" typeLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/">
     <description>MCC</description>
